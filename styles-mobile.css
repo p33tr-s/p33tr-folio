@@ -213,7 +213,7 @@ p {
     left: 81%;
     color: hsl(22, 100%, 58%);
 }
-@media screen and (min-width: 460px) {
+@media screen and (min-width: 450px) {
     p {
         font-size: 20px !important;
     }
