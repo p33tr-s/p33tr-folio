@@ -1,0 +1,253 @@
+/* Base styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    background-color: #d7ffbe;
+}
+
+/* Style for layers */
+.layer {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: inherit;
+    box-sizing: border-box;
+}
+
+/* Layer 1 with border using before pseudo-element */
+#layer1 {
+    z-index: 4;
+    clip-path: polygon(20% 0, 20% 15%, 90% 15%, 90% 100%, 0 100%, 0 15%, 0 0);
+    background-color: #FFA07A;
+}
+
+#layer1::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    clip-path: polygon(18% 0, 18% 15%, 90% 15%, 90% 100%, 0 100%, 0 15%, 0 0);
+    background-color: #2e3a27; /* Border color */
+    z-index: -1;
+}
+
+/* Scrollable content for text inside Layer 1 */
+.scrollable-content {
+    height: 80%; /* Subtract space for the header */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 20px;
+    box-sizing: border-box;
+    margin-right: 12%;
+    margin-left: 5%;
+    transform: translateY(21%);
+   
+}
+
+
+#Shitjustworksout{
+    width: 80%;
+}
+#audioworks {
+    align-content: center;
+}
+#layer2 h2{
+    color: #FF7F50;
+}
+/* Layer 2 */
+#layer2 {
+    text-align: center;
+    z-index: 3;
+    clip-path: polygon(20% 0, 40% 0%, 40% 15%, 92.5% 15%, 92.5% 100%, 0 100%, 0% 15%, 20% 15%);
+    background-color: #FF7F50;
+    padding: 15px;
+}
+
+#layer2::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    clip-path: polygon(21% 0, 38% 0%, 38% 15%, 92.5% 15%, 92.5% 100%, 0 100%, 0% 15%, 21% 15%);
+    background-color: #3e4e35;
+    z-index: -1;
+}
+
+/* Layer 3 */
+#layer3 {
+    z-index: 2;
+    clip-path: polygon(40% 0, 60% 0, 60% 15%, 95% 15%, 95% 100%, 0 100%, 0 15%, 40% 15%);
+    background-color: #FF6347;
+    padding: 15px;
+}
+
+#layer3::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    clip-path: polygon(41% 0, 59% 0, 59% 15%, 95% 15%, 95% 100%, 0 100%, 0 15%, 41% 15%);
+    background-color: #556948;
+    z-index: -1;
+}
+
+/* Layer 4 */
+#layer4 {
+    text-align: center;
+    z-index: 1;
+    clip-path: polygon(60% 0, 80% 0, 80% 15%, 97.5% 15%, 97.5% 100%, 0 100%, 0 15%, 60% 15%);
+    background-color: #FF4500;
+}
+
+#layer4::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    clip-path: polygon(61% 0, 79% 0, 79% 15%, 97.5% 15%, 97.5% 100%, 0 100%, 0 15%, 61% 15%);
+    background-color: #6f8a5f;
+}
+
+/* Header for Layer 1 */
+h2 {
+    text-align: center;
+    font-size: 20px;
+    color: #ff4800;
+    margin-top: 0;
+}
+
+/* Paragraph styling inside Layer 1 */
+
+p {
+    color:#caffc5;
+    font-size: 17px;
+    text-align: center;
+}
+
+
+.tab-label {
+    position: absolute;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    color: #55ff3f;
+    z-index: 1000;
+    pointer-events: none;
+}
+
+.tab-label-P33tr {
+    position: absolute;
+    writing-mode: horizontal-tb;
+    text-orientation: mixed;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #ff9e20;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* Position for 'ABOUT' label */
+#label-about {
+    top: 1.5%;
+    left: 5%;
+}
+
+#label-video {
+    top: 1.5%;
+    left: 25%;
+}
+
+#label-audio {
+    top: 1.5%;
+    left: 45%;
+}
+
+#label-3D {
+    top: 1.5%;
+    left: 65%;
+}
+
+#label-P33tr {
+    top: 10%;
+    left: 81%;
+    color: hsl(22, 100%, 58%);
+}
+
+#label-P33tr2 {
+    top: 2%;
+    left: 81%;
+    z-index: 1000;
+    color: hsl(22, 100%, 58%);
+}
+
+#label-P33tr3 {
+    top: 4%;
+    left: 81%;
+    color: hsl(22, 100%, 58%);
+}
+
+#label-P33tr4 {
+    top: 6%;
+    left: 81%;
+    z-index: 1000;
+    color: hsl(22, 100%, 58%);
+}
+
+#label-P33tr5 {
+    top: 8%;
+    left: 81%;
+    color: hsl(22, 100%, 58%);
+}
+@media screen and (min-width: 810px) {
+    p {
+        font-size: 20px !important;
+    }
+    h2 {
+        font-size: 26px;
+    }
+    .tab-label {
+        writing-mode: horizontal-tb;
+        top: 5% !important;
+        transform: translate(-10%) !important;
+    }
+    .tab-label-P33tr{
+        top: 5% !important;
+        font-size: 40px;
+    }
+
+}
+
+@media screen and (min-width: 1050px) {
+    p {
+        font-size: 20px !important;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    .tab-label {
+        writing-mode: horizontal-tb !important;
+        top: 5% !important;
+        transform: translate(-10%) !important;
+        font-size: 36px;
+    }
+    .tab-label-P33tr{
+        top: 5% !important;
+        font-size: 50px;
+    }
+
+}
