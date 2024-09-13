@@ -143,7 +143,7 @@ p {
     text-orientation: mixed;
     font-family: Arial, sans-serif;
     font-weight: bold;
-    font-size: 28px;
+    font-size: 24px;
     color: #55ff3f;
     z-index: 1000;
     pointer-events: none;
@@ -234,10 +234,10 @@ p {
 
 @media screen and (min-width: 1050px) {
     p {
-        font-size: 20px !important;
+        font-size: 25px !important;
     }
     h2 {
-        font-size: 30px;
+        font-size: 35px;
     }
     .tab-label {
         writing-mode: horizontal-tb !important;
