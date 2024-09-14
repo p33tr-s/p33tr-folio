@@ -8,3 +8,18 @@ document.querySelectorAll('.layer').forEach(layer => {
         layer.style.zIndex = maxZIndex + 1;
     });
 });
+
+// JavaScript to apply lazy loading to all iframes and images
+document.addEventListener("DOMContentLoaded", function() {
+    // Apply lazy loading to all iframe elements
+    const iframes = document.querySelectorAll('iframe');
+    iframes.forEach(iframe => {
+        iframe.setAttribute('loading', 'lazy');
+    });
+
+    // Apply lazy loading to all img elements
+    const images = document.querySelectorAll('img');
+    images.forEach(image => {
+        image.setAttribute('loading', 'lazy');
+    });
+});
