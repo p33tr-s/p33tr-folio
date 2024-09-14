@@ -260,5 +260,10 @@ audio {
         top: 3% !important;
         font-size: 50px;
     }
+      iframe {
+        width: 60% !important;
+        aspect-ratio: 16 / 9 !important;
+    }
+
 
 }
