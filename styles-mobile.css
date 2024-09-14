@@ -50,7 +50,6 @@ body, html {
    
 }
 
-
 #Shitjustworksout{
     width: 80%;
 }
@@ -213,6 +212,18 @@ p {
     left: 81%;
     color: hsl(22, 100%, 58%);
 }
+
+
+iframe {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+audio {
+    width: 90%; /* Just make it smaller, no other adjustments */
+}
+
 @media screen and (min-width: 450px) {
     p {
         font-size: 20px !important;
@@ -226,7 +237,7 @@ p {
         transform: translate(-10%) !important;
     }
     .tab-label-P33tr{
-        top: 5% !important;
+        top: 2% !important;
         font-size: 40px;
     }
 
